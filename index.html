@@ -1,173 +1,204 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Methodist Church Ghana — Domfete Society</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Methodist Church Ghana — Domfete Society"><title>Methodist Church Ghana — Domfete Society</title><link rel="stylesheet" href="style.css"></head><body><header class="main-header">
+  <div class="container header-inner">
+    <a class="header-left" href="index.html" style="text-decoration:none">
+      <img src="images/methodis logo.png" class="header-logo" alt="Methodist Church Ghana logo">
+      <div class="header-text"><h1>Methodist Church Ghana</h1><p>Domfete Society</p></div>
+    </a>
+    <nav class="navbar" aria-label="Main navigation"><ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html" class="">About</a></li>
+      <li><a href="organisations.html" class="">Organisations</a></li>
+      <li><a href="events.html" class="">Events</a></li>
+      <li><a href="contact.html" class="">Contact</a></li>
+    </ul></nav>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Open menu">☰</button>
+  </div>
+</header>
+<div class="scroll-text"><span>Welcome to Methodist Church Ghana — Domfete Society • Sunday Service: 9:00 AM To 12:00 PM </span>
+</div>
+<!--HERO SECTION-->
 
-  <!-- HEADER -->
-  <header class="main-header">
-    <div class="header-left">
-      <img src="images/methodis logo.png" class="header-logo" alt="logo">
-      <div class="header-text">
-        <h1>Methodist Church Ghana</h1>
-        <p>Domfete Society</p>
-      </div>
+<section class="hero">
+
+  <!-- SLIDESHOW BACKGROUNDS -->
+  <div class="slides">
+
+    <div class="slide active">
+      <img
+        src="images/building.jpg"
+        alt="Domfete Methodist Church building"
+      >
+      <div class="overlay"></div>
     </div>
 
-    <div style="display:flex;align-items:center;gap:14px">
-      <nav class="navbar">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="organisations.html">Organisations</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="slide">
+      <img
+        src="images/4.jpg"
+        alt="Domfete Church Children's Week"
+      >
+      <div class="overlay"></div>
     </div>
-  </header>
 
-  <!-- SCROLLING ANNOUNCE -->
-  <div class="scroll-text"><span>Welcome to Methodist Church Ghana — Domfete Society • Sunday Service: 8:00 AM • Bible Study: Wed 6:00 PM</span></div>
+    <div class="slide">
+      <img
+        src="images/Youth.jpg"
+        alt="Domfete Youth Fellowship"
+      >
+      <div class="overlay"></div>
+    </div>
 
-  <!-- SLIDESHOW -->
-  <div class="slideshow-container">
-    <div class="slide fade"><img src="images/Theme.jpg" alt=""><div class="slide-text">Welcome to Domfete Methodist Church</div></div>
-    <div class="slide fade"><img src="images/children's week.jpg" alt=""><div class="slide-text">Growing in Christ Together</div></div>
-    <div class="slide fade"><img src="images/Youth.jpg" alt=""><div class="slide-text">Service to God and Community</div></div>
   </div>
 
-  <!-- HERO -->
-  <section class="hero">
-  <div class="hero-overlay"></div   >
+
+  <!-- HERO CONTENT -->
   <div class="hero-content">
-    <h1>Raising Disciples. Building Community. Serving Christ.</h1>
+
+    <span class="eyebrow">
+      WELCOME TO DOMFETE SOCIETY
+    </span>
+
+    <h2>
+      Raising Disciples.<br>
+      Building Community.<br>
+      Serving Christ.
+    </h2>
+
     <p>
-      Welcome to Methodist Church Ghana, Domfete Society.
-      A place of worship, growth and transformation.
+      A place of worship, spiritual growth,
+      fellowship and transformation.
     </p>
-    <a href="contact.html" class="btn-primary">Worship With Us</a>
+
+    <div class="buttons">
+
+      <a
+        href="contact.html"
+        class="btn btn-primary"
+      >
+        Worship With Us
+      </a>
+
+      <a
+        href="about.html"
+        class="btn btn-outline"
+      >
+        Discover Our Church
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- SLIDE INDICATORS -->
+  <div class="hero-indicators">
+
+    <button
+      class="hero-dot active"
+      aria-label="Show slide 1"
+      onclick="showSlide(0)"
+    ></button>
+
+    <button
+      class="hero-dot"
+      aria-label="Show slide 2"
+      onclick="showSlide(1)"
+    ></button>
+
+    <button
+      class="hero-dot"
+      aria-label="Show slide 3"
+      onclick="showSlide(2)"
+    ></button>
+
+  </div>
+
+
+  <!-- SCROLL INDICATOR -->
+  <div class="scroll-indicator">
+
+    <span>Scroll to explore</span>
+
+    <span class="scroll-arrow">↓</span>
+
   </div>
 </section>
 
-  <!-- WELCOME MESSAGE -->
-<section class="welcome-section">
-  <div class="welcome-container">
-    <div class="welcome-image">
-      <img src="images/pastor.jpg" alt="Society Minister">
-    </div>
-    <div class="welcome-content">
-      <h2>Welcome From The Society Minister</h2>
-      <p>
-        Grace and peace to you in the name of our Lord Jesus Christ.
-        We are delighted to welcome you to Domfete Society of the Methodist Church Ghana.
-        Our mission is to raise faithful disciples, build strong families,
-        and impact our community with the love of Christ.
-      </p>
-      <a href="about.html" class="btn-primary">Read More</a>
-    </div>
+<section class="section"><div class="container welcome-grid reveal"><div class="welcome-photo"><img src="images/caretaker.jpeg" alt="Society Minister"></div><div class="welcome-copy"><span class="kicker">A WARM WELCOME</span><h2>Welcome From The Society Minister</h2><p>Grace and peace to you in the name of our Lord Jesus Christ. We are delighted to welcome you to Domfete Society of the Methodist Church Ghana. Our mission is to raise faithful disciples, build strong families, and impact our community with the love of Christ.</p><a href="about.html" class="btn btn-primary">Read More</a></div></div></section>
+
+<section class="section services"><div class="container"><div class="section-head"><span class="kicker">JOIN US</span><h2>Service Times</h2><p>Come and worship, learn and fellowship with us.</p></div><div class="service-grid">
+<div class="service-card reveal"><h3>Sunday Worship</h3><p>9:00 AM — Main Service</p></div>
+<div class="service-card reveal"><h3>Bible Study</h3><p>Wednesday — 6:00 PM</p></div>
+<div class="service-card reveal"><h3>Prayer Meeting</h3><p>Friday — 6:00 PM</p></div>
+</div></div></section>
+
+<section class="cta"><div class="container"><span class="kicker">YOU ARE WELCOME</span><h2>Come Worship With Us</h2><p>Experience powerful worship, sound teaching and warm fellowship.</p>
+  <a href="contact.html" class="btn btn-primary">Plan Your Visit</a></div></section>
+
+<section class="section"><div class="container"><div class="section-head"><span class="kicker">OUR LIFE TOGETHER</span><h2>Latest Gallery</h2><p>A glimpse into worship, fellowship and life at Domfete.</p></div><div class="gallery-grid">
+<div class="card reveal"><img src="images/4.jpg" alt="Sunday Service"><div class="card-body"><h3>Sunday Service</h3></div></div>
+<div class="card reveal"><img src="images/45.jpg" alt="Youth Fellowship"><div class="card-body"><h3>Youth Fellowship</h3></div></div>
+<div class="card reveal"><img src="images/women.webp" alt="Women's Fellowship"><div class="card-body"><h3>Women’s Fellowship</h3></div></div>
+<div class="card reveal"><img src="images/1.jpg" alt="Children's Program"><div class="card-body"><h3>Children’s Program</h3></div></div>
+<div class="card reveal"><img src="images/5.jpg" alt="Special Event"><div class="card-body"><h3>Special Event</h3></div></div>
+<div class="card reveal"><img src="images/building.jpg" alt="Church Structure"><div class="card-body"><h3>Church Structure</h3></div></div>
+<div class="card reveal"><img src="images/girl's.webp" alt="Girls Fellowship"><div class="card-body"><h3>MGF</h3></div></div>
+<div class="card reveal"><img src="images/suma.jpg" alt="SUMA"><div class="card-body"><h3>SUMA</h3></div></div>
+<div class="card reveal"><img src="images/2.jpg" alt="Christ Little Band"><div class="card-body"><h3>Christ Little Band</h3></div></div>
+<div class="card reveal"><img src="images/pulpit.jpg" alt="New Pulpit Dedication"><div class="card-body"><h3>New Pulpit Dedication</h3></div></div>
+</div></div></section>
+
+<footer class="main-footer">
+  <div class="container footer-grid">
+    <div><h3>Methodist Church Ghana</h3><p>Domfete Society</p><p>A place of worship, growth and transformation.</p></div>
+    <div><h4>Quick Links</h4><div class="footer-links">
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="organisations.html">Organisations</a><a href="events.html">Events</a><a href="contact.html">Contact</a>
+    </div></div>
+    <div><h4>Follow Us</h4><div class="social-icons">
+      <a href="https://facebook.com" target="_blank"><img src="images/facebook.jpg" alt="Facebook"></a>
+      <a href="https://wa.me/233257164442" target="_blank"><img src="images/WhatsApp Image .jpg" alt="WhatsApp"></a>
+      <a href="https://tiktok.com/@ebenezer.methodis0" target="_blank"><img src="images/tictok.jpg" alt="TikTok"></a>
+    </div></div>
   </div>
-</section>
+  <div class="footer-bottom">© 2026 Domfete Methodist Church. All Rights Reserved.</div>
+</footer>
 
-<!-- SERVICE TIMES -->
-<section class="service-times">
-  <h2 class="section-title">Service Times</h2>
-  <div class="service-grid">
-    <div class="service-card">
-      <h3>Sunday Worship</h3>
-      <p>8:00 AM – Main Service</p>
-    </div>
+<script>
+function toggleMenu(){document.querySelector('.navbar ul').classList.toggle('active')}
+const els=document.querySelectorAll('.reveal');
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('active');io.unobserve(e.target)}}),{threshold:.1});
+els.forEach(e=>io.observe(e));
+</script>
+<script>
+let i = 0;
 
-    <div class="service-card">
-      <h3>Bible Study</h3>
-      <p>Wednesday – 6:00 PM</p>
-    </div>
+const slides = document.querySelectorAll(".slide");
+const dots = document.querySelectorAll(".hero-dot");
 
-    <div class="service-card">
-      <h3>Prayer Meeting</h3>
-      <p>Friday – 6:00 PM</p>
-    </div>
-  </div>
-</section>
+function showSlide(index) {
 
-<!-- CALL TO ACTION -->
-<section class="cta-section">
-  <h2>Join Us This Sunday</h2>
-  <p>Experience powerful worship, sound teaching and warm fellowship.</p>
-  <a href="contact.html" class="btn-light">Plan Your Visit</a>
-</section>
+  slides[i].classList.remove("active");
 
-  <!-- LATEST GALLERY -->
-  <h2 class="section-title">Latest Gallery</h2>
-  <div class="gallery-grid" id="gallery">
-    <!-- Replace image filenames with your actual files -->
-    <div class="card reveal"><img src="images/4.jpg" alt=""><div class="card-body"><h3>Sunday Service</h3></div></div>
-    <div class="card reveal"><img src="images/45.jpg" alt=""><div class="card-body"><h3>Youth Fellowship</h3></div></div>
-    <div class="card reveal"><img src="images/women.webp" alt=""><div class="card-body"><h3>Women’s Fellowship</h3></div></div>
-    <div class="card reveal"><img src="images/1.jpg" alt=""><div class="card-body"><h3>Children’s Program</h3></div></div>
-    <div class="card reveal"><img src="images/5.jpg" alt=""><div class="card-body"><h3>Special Event</h3></div></div>
-     <div class="card reveal"><img src="images/Building.jpeg" alt=""><div class="card-body"><h3>Current Church Structure</h3></div></div>
-      <div class="card reveal"><img src="images/girl's.webp" alt=""><div class="card-body"><h3>MGF</h3></div></div>
-      <div class="card reveal"><img src="images/suma.jpg" alt=""><div class="card-body"><h3>SUMA</h3></div></div>
-      <div class="card reveal"><img src="images/2.jpg" alt=""><div class="card-body"><h3>Chris Little Band</h3></div></div>
-      <div class="card reveal"><img src="images/pulpit.jpg" alt=""><div class="card-body"><h3>Opening and Dedication of New Pulpit</h3></div></div>
-  </div>
+  if (dots[i]) {
+    dots[i].classList.remove("active");
+  }
 
-  <!-- FOOTER -->
-  <footer class="main-footer">
-    <div class="footer-content">
-      <div class="footer-section"><h3>Methodist Church Ghana</h3><p>Domfete Society</p></div>
-      <div class="footer-section">
-        <h4>Quick Links</h4>
-        <ul><li><a href="index.html">Home</a></li><li><a href="organisations.html">Organisations</a></li><li><a href="events.html">Events</a></li><li><a href="contact.html">Contact</a></li></ul>
-      </div>
-      <div class="footer-section">
-        <h4>Follow Us</h4>
-        <div class="social-icons">
-          <a href="http://facebook.com"><img src="images/facebook.jpg" style="width:22px"></a>
-          <a href="http://wa.me/233257164442"><img src="images/WhatsApp Image .jpg" style="width:22px"></a>
-          <a href="https://tiktok.com/@ebenezer.methodis0"><img src="images/tictok.jpg" style="width:22px"></a>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">© 2025 Domfete Methodist Church. All Rights Reserved.</div>
-  </footer>
+  i = index;
 
-  <!-- SCRIPTS -->
-  <script>
-    // slideshow
-    let slideIndex = 0;
-    function showSlides(){
-      let i;
-      let slides = document.getElementsByClassName("slide");
-      for(i=0;i<slides.length;i++){slides[i].style.display="none";}
-      slideIndex++;
-      if(slideIndex>slides.length){slideIndex=1}
-      if(slides[slideIndex-1]) slides[slideIndex-1].style.display="block";
-      setTimeout(showSlides,4200);
-    }
-    showSlides();
+  slides[i].classList.add("active");
 
-    // mobile menu
-    function toggleMenu(){
-      document.querySelector(".navbar ul").classList.toggle("active");
-    }
+  if (dots[i]) {
+    dots[i].classList.add("active");
+  }
+}
 
-    // reveal on scroll
-    function reveal(){
-      let reveals = document.querySelectorAll(".reveal");
-      for(let i=0;i<reveals.length;i++){
-        let top = reveals[i].getBoundingClientRect().top;
-        if(top < window.innerHeight - 80) reveals[i].classList.add("active");
-      }
-    }
-    window.addEventListener("scroll", reveal);
-    window.addEventListener("load", reveal);
-  </script>
+
+setInterval(() => {
+
+  let next = (i + 1) % slides.length;
+
+  showSlide(next);
+
+}, 5000);
+</script>
 </body>
 </html>
