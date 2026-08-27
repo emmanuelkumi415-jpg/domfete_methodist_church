@@ -1,335 +1,664 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>About — Domfete Society</title>
+
   <link rel="stylesheet" href="style.css">
-
-  <style>
-    /* ===== ABOUT HERO ===== */
-    .about-hero{
-      height:320px;
-      background:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),
-      url("images/christian-cross-.jpg") center/cover no-repeat;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      text-align:center;
-      color:#fff;
-    }
-    .about-hero h1{
-      font-size:36px;
-      margin:0;
-    }
-
-    /* ===== ABOUT GRID ===== */
-    .about-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-      gap:40px;
-      align-items:center;
-      margin-top:50px;
-    }
-
-    .about-text h2{
-      color:var(--navy);
-      margin-bottom:12px;
-    }
-
-    .about-text p{
-      color:#333;
-      margin-bottom:14px;
-    }
-
-    /* ===== STATS SECTION ===== */
-    .stats{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-      gap:20px;
-      margin:50px 0;
-      text-align:center;
-    }
-
-    .stat-box{
-      background:#fff;
-      padding:25px;
-      border-radius:10px;
-      box-shadow:0 6px 18px rgba(2,12,40,0.06);
-      border-top:5px solid var(--gold);
-    }
-
-    .stat-box h3{
-      margin:0;
-      color:var(--navy);
-      font-size:26px;
-    }
-
-    .stat-box p{
-      margin:6px 0 0;
-      font-weight:600;
-      color:#555;
-    }
-
-    /* ===== LEADERSHIP ===== */
-    .leadership-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-      gap:20px;
-      margin-top:30px;
-    }
-
-    .leader-card{
-      background:#fff;
-      padding:20px;
-      border-radius:10px;
-      text-align:center;
-      box-shadow:0 6px 18px rgba(2,12,40,0.06);
-      border-top:5px solid var(--gold);
-      transition:transform .3s ease;
-    }
-
-    .leader-card:hover{
-      transform:translateY(-6px);
-    }
-
-    .leader-card h4{
-      margin:0;
-      color:var(--navy);
-    }
-
-    .leader-card p{
-      margin:6px 0 0;
-      font-weight:600;
-      color:#555;
-    }
-    /* ===== MISSION / VISION / VALUES ===== */
-
-.mvv-section{
-  margin:60px 0;
-}
-
-.mvv-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:25px;
-}
-
-.mvv-card{
-  background:#fff;
-  padding:30px;
-  border-radius:12px;
-  box-shadow:0 6px 18px rgba(2,12,40,0.06);
-  border-top:6px solid var(--gold);
-  transition:transform .3s ease, box-shadow .3s ease;
-}
-
-.mvv-card:hover{
-  transform:translateY(-6px);
-  box-shadow:0 10px 22px rgba(2,12,40,0.12);
-}
-
-.mvv-card h3{
-  color:var(--navy);
-  margin-bottom:12px;
-  font-size:20px;
-}
-
-.mvv-card p{
-  color:#444;
-}
-
-.mvv-card ul{
-  padding-left:18px;
-  color:#444;
-}
-
-.mvv-card ul li{
-  margin-bottom:8px;
-}
-  </style>
-
 </head>
+
 <body>
 
-<!-- HEADER -->
-<header class="main-header">
-  <div class="header-left">
-    <img src="images/methodis logo.png" class="header-logo" alt="logo">
-    <div class="header-text">
-      <h1>Methodist Church Ghana</h1>
-      <p>Domfete Society</p>
-    </div>
-  </div>
 
-  <div style="display:flex;align-items:center;gap:14px">
-    <nav class="navbar">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" class="active">About</a></li>
-        <li><a href="organisations.html">Organisations</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
-  </div>
-</header>
+  <!-- =====================================================
+       HEADER
+  ====================================================== -->
 
-<!-- HERO -->
-<section class="about-hero">
-  <h1>About Domfete Society</h1>
-</section>
+  <header class="main-header">
 
-<main style="max-width:1100px;margin:0 auto;padding:50px 20px;">
+    <div class="container header-inner">
 
-  <!-- WHO WE ARE -->
-  <div class="about-grid reveal">
+      <!-- LOGO + CHURCH NAME -->
 
-    <div class="about-text">
-      <h2>Who We Are</h2>
-      <p>
-        Domfete Society is a growing Christian community within the Jinijini Circuit
-        of the Methodist Church Ghana. We are committed to worship, discipleship,
-        evangelism and community transformation through Jesus Christ.
-      </p>
-      <p>
-        Founded by devoted early members including Abraham Kyere and Isaac Febiri,
-        the Church experienced revival in the late 1960s and has continued to grow
-        spiritually and numerically to the glory of God.
-      </p>
-    </div>
+      <div class="header-left">
 
-    <div>
-      <img src="images/c3.jpg" style="width:100%;border-radius:12px;">
-    </div>
+        <img
+          src="images/methodis logo.png"
+          class="header-logo"
+          alt="Methodist Church Ghana Logo"
+        >
 
-  </div>
+        <div class="header-text">
 
-  <!-- MISSION VISION CORE VALUES -->
-<section class="mvv-section reveal">
+          <h1>Methodist Church Ghana</h1>
 
-  <div class="mvv-grid">
+          <p>Domfete Society</p>
 
-    <div class="mvv-card">
-      <h3>Our Mission</h3>
-      <p>
-        To make disciples of Jesus Christ through worship, teaching,
-        evangelism and compassionate service to our community.
-      </p>
-    </div>
+        </div>
 
-    <div class="mvv-card">
-      <h3>Our Vision</h3>
-      <p>
-        To be a vibrant and spirit-filled church that transforms lives,
-        strengthens families and impacts society for Christ.
-      </p>
-    </div>
-
-    <div class="mvv-card">
-      <h3>Our Core Values</h3>
-      <ul>
-        <li>Biblical Teaching</li>
-        <li>Prayer & Worship</li>
-        <li>Holiness & Integrity</li>
-        <li>Love & Unity</li>
-        <li>Community Service</li>
-      </ul>
-    </div>
-
-  </div>
-
-</section>
-
-  <!-- STATS -->
-  <div class="stats reveal">
-    <div class="stat-box">
-      <h3>1960s</h3>
-      <p>Revival Period</p>
-    </div>
-
-    <div class="stat-box">
-      <h3>2008</h3>
-      <p>New Chapel Project</p>
-    </div>
-
-    <div class="stat-box">
-      <h3>200+</h3>
-      <p>Active Members</p>
-    </div>
-  </div>
-
-  <!-- LEADERSHIP -->
-  <div class="reveal">
-    <h2 class="section-title">Current Leadership</h2>
-
-    <div class="leadership-grid">
-      <div class="leader-card">
-         <h4>Very Rev Charles A. Agyei</h4>
-        <p>Superintendent Minister</p>
       </div>
 
-      <div class="leader-card">
-        <h4>Augestine Nti</h4>
-        <p>Caretaker</p>
+
+      <!-- NAVIGATION -->
+
+      <div style="display:flex;align-items:center;gap:14px;">
+
+        <nav class="navbar">
+
+          <ul>
+
+            <li>
+              <a href="index.html">
+                Home
+              </a>
+            </li>
+
+            <li>
+              <a href="about.html" class="active">
+                About
+              </a>
+            </li>
+
+            <li>
+              <a href="organisations.html">
+                Organisations
+              </a>
+            </li>
+
+            <li>
+              <a href="events.html">
+                Events
+              </a>
+            </li>
+
+            <li>
+              <a href="contact.html">
+                Contact
+              </a>
+            </li>
+
+          </ul>
+
+        </nav>
+
+
+        <!-- MOBILE MENU BUTTON -->
+
+        <div
+          class="hamburger"
+          onclick="toggleMenu()"
+          aria-label="Open menu"
+        >
+          ☰
+        </div>
+
       </div>
 
-      <div class="leader-card">
-        <h4>Oppong Mavis</h4>
-        <p>Society Steward</p>
+    </div>
+
+  </header>
+
+
+
+  <!-- =====================================================
+       ABOUT HERO
+  ====================================================== -->
+
+  <section class="about-hero">
+
+    <div class="about-hero-content">
+
+      <span class="about-eyebrow">
+        METHODIST CHURCH GHANA
+      </span>
+
+      <h1>
+        About Domfete Society
+      </h1>
+
+      <p>
+        Discover our history, mission, vision, values and the people
+        serving God's work in the Domfete Society.
+      </p>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       MAIN CONTENT
+  ====================================================== -->
+
+  <main class="about-main">
+
+
+    <!-- =================================================
+         WHO WE ARE
+    ================================================== -->
+
+    <section class="about-grid reveal">
+
+
+      <div class="about-text">
+
+        <span class="about-small-title">
+          WHO WE ARE
+        </span>
+
+        <h2>
+          A Community of Faith, Worship and Service
+        </h2>
+
+        <p>
+          Domfete Society is a growing Christian community within
+          the Jinijini Circuit of the Methodist Church Ghana.
+          We are committed to worship, discipleship, evangelism
+          and community transformation through Jesus Christ.
+        </p>
+
+        <p>
+          Founded by devoted early members including Abraham Kyere
+          and Isaac Febiri, the Church experienced revival in the
+          late 1960s and has continued to grow spiritually and
+          numerically to the glory of God.
+        </p>
+
+        <p>
+          Today, the Society continues to provide a place where
+          people can worship God, grow in faith, serve others and
+          build a strong Christian community.
+        </p>
+
       </div>
 
-      <div class="leader-card">
-        <h4>Hanna Aidoo</h4>
-        <p>Lay Chairperson</p>
+
+      <div class="about-image">
+
+        <img
+          src="images/c3.jpg"
+          alt="Domfete Methodist Church"
+        >
+
       </div>
 
-       
+    </section>
+
+
+
+    <!-- =================================================
+         MISSION / VISION / VALUES
+    ================================================== -->
+
+    <section class="mvv-section reveal">
+
+      <div class="about-section-heading">
+
+        <span>
+          WHAT GUIDES US
+        </span>
+
+        <h2>
+          Our Mission, Vision & Core Values
+        </h2>
+
+        <p>
+          These principles guide our ministry, worship and service
+          to God and the community.
+        </p>
+
+      </div>
+
+
+      <div class="mvv-grid">
+
+
+        <!-- MISSION -->
+
+        <div class="mvv-card">
+
+          <h3>
+            Our Mission
+          </h3>
+
+          <p>
+            To make disciples of Jesus Christ through worship,
+            teaching, evangelism and compassionate service to
+            our community.
+          </p>
+
+        </div>
+
+
+        <!-- VISION -->
+
+        <div class="mvv-card">
+
+          <h3>
+            Our Vision
+          </h3>
+
+          <p>
+            To be a vibrant and spirit-filled church that
+            transforms lives, strengthens families and impacts
+            society for Christ.
+          </p>
+
+        </div>
+
+
+        <!-- VALUES -->
+
+        <div class="mvv-card">
+
+          <h3>
+            Our Core Values
+          </h3>
+
+          <ul>
+
+            <li>
+              Biblical Teaching
+            </li>
+
+            <li>
+              Prayer & Worship
+            </li>
+
+            <li>
+              Holiness & Integrity
+            </li>
+
+            <li>
+              Love & Unity
+            </li>
+
+            <li>
+              Community Service
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         DOMFETE AT A GLANCE
+    ================================================== -->
+
+    <section class="stats-section reveal">
+
+      <div class="about-section-heading">
+
+        <span>
+          DOMFETE AT A GLANCE
+        </span>
+
+        <h2>
+          Our Journey
+        </h2>
+
+        <p>
+          A few highlights from the history and growth of
+          Domfete Society.
+        </p>
+
+      </div>
+
+
+      <div class="stats">
+
+
+        <div class="stat-box">
+
+          <h3>
+            1960s
+          </h3>
+
+          <p>
+            Revival Period
+          </p>
+
+        </div>
+
+
+        <div class="stat-box">
+
+          <h3>
+            2008
+          </h3>
+
+          <p>
+            New Chapel Project
+          </p>
+
+        </div>
+
+
+        <div class="stat-box">
+
+          <h3>
+            200+
+          </h3>
+
+          <p>
+            Active Members
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         CURRENT LEADERSHIP
+    ================================================== -->
+
+    <section class="leadership-section reveal">
+
+      <div class="about-section-heading">
+
+        <span>
+          SERVING THE SOCIETY
+        </span>
+
+        <h2>
+          Current Leadership
+        </h2>
+
+        <p>
+          Meet some of the leaders currently serving the
+          Domfete Society.
+        </p>
+
+      </div>
+
+
+      <div class="leadership-grid">
+
+
+        <!-- LEADER 1 -->
+
+        <div class="leader-card">
+
+          <div class="leader-icon">
+            ✦
+          </div>
+
+          <h4>
+            Very Rev Charles A. Agyei
+          </h4>
+
+          <p>
+            Superintendent Minister
+          </p>
+
+        </div>
+
+
+        <!-- LEADER 2 -->
+
+        <div class="leader-card">
+
+          <div class="leader-icon">
+            ✦
+          </div>
+
+          <h4>
+            Augestine Nti
+          </h4>
+
+          <p>
+            Caretaker
+          </p>
+
+        </div>
+
+
+        <!-- LEADER 3 -->
+
+        <div class="leader-card">
+
+          <div class="leader-icon">
+            ✦
+          </div>
+
+          <h4>
+            Oppong Mavis
+          </h4>
+
+          <p>
+            Society Steward
+          </p>
+
+        </div>
+
+
+        <!-- LEADER 4 -->
+
+        <div class="leader-card">
+
+          <div class="leader-icon">
+            ✦
+          </div>
+
+          <h4>
+            Hanna Aidoo
+          </h4>
+
+          <p>
+            Lay Chairperson
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+
+  <footer class="main-footer">
+
+    <div class="container footer-grid">
+
+
+      <!-- CHURCH -->
+
+      <div class="footer-section">
+
+        <h3>
+          Methodist Church Ghana
+        </h3>
+
+        <p>
+          Domfete Society
+        </p>
+
+        <p>
+          Jinijini Circuit
+        </p>
+
+        <p>
+          A community committed to worship, faith,
+          fellowship and service.
+        </p>
+
+      </div>
+
+
+      <!-- QUICK LINKS -->
+
+      <div class="footer-section">
+
+        <h4>
+          Quick Links
+        </h4>
+
+        <div class="footer-links">
+
+          <a href="index.html">
+            Home
+          </a>
+
+          <a href="about.html">
+            About Us
+          </a>
+
+          <a href="organisations.html">
+            Organisations
+          </a>
+
+          <a href="events.html">
+            Events
+          </a>
+
+          <a href="contact.html">
+            Contact
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- SOCIAL MEDIA -->
+
+      <div class="footer-section">
+
+        <h4>
+          Connect With Us
+        </h4>
+
+        <p>
+          Follow and connect with Domfete Society online.
+        </p>
+
+
+        <div class="social-icons">
+
+          <!-- Replace # with your actual links -->
+
+          <a
+            href="#"
+            aria-label="Facebook"
+            target="_blank"
+          >
+            <img
+              src="images/facebook.jpg"
+              alt="Facebook"
+            >
+          </a>
+
+
+          <a
+            href="https://wa.me/233257164442"
+            aria-label="WhatsApp"
+            target="_blank"
+          >
+            <img
+              src="images/WhatsApp Image .jpg"
+              alt="WhatsApp"
+            >
+          </a>
+
+
+          <a
+            href="https://tiktok.com/@ebenezer.methodis0"
+            aria-label="TikTok"
+            target="_blank"
+          >
+            <img
+              src="images/tictok.jpg"
+              alt="TikTok"
+            >
+          </a>
+
+        </div>
+
+      </div>
 
     </div>
-  </div>
 
-</main>
 
-<footer class="main-footer">
-  <div class="footer-content">
-    <div class="footer-section">
-      <h3>Methodist Church Ghana</h3>
-      <p>Domfete Society</p>
+    <!-- FOOTER BOTTOM -->
+
+    <div class="footer-bottom">
+
+      © 2026 Domfete Methodist Church.
+      All Rights Reserved.
+
     </div>
 
-    <div class="footer-section">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="organisations.html">Organisations</a></li>
-      </ul>
-    </div>
-  </div>
+  </footer>
 
-  <div class="footer-bottom">
-    © 2025 Domfete Methodist Church. All Rights Reserved.
-  </div>
-</footer>
 
-<script>
-  function toggleMenu(){
-    document.querySelector(".navbar ul").classList.toggle("active");
-  }
 
-  function reveal(){
-    let reveals=document.querySelectorAll(".reveal");
-    for(let r of reveals){
-      if(r.getBoundingClientRect().top < window.innerHeight-80){
-        r.classList.add("active");
-      }
+  <!-- =====================================================
+       JAVASCRIPT
+  ====================================================== -->
+
+  <script>
+
+    /* MOBILE MENU */
+
+    function toggleMenu() {
+
+      document
+        .querySelector(".navbar ul")
+        .classList.toggle("active");
+
     }
-  }
 
-  window.addEventListener("scroll",reveal);
-  window.addEventListener("load",reveal);
-</script>
+
+    /* SCROLL REVEAL */
+
+    function reveal() {
+
+      const reveals =
+        document.querySelectorAll(".reveal, .about-reveal");
+
+      for (const element of reveals) {
+
+        if (
+          element.getBoundingClientRect().top
+          <
+          window.innerHeight - 80
+        ) {
+
+          element.classList.add("active");
+
+        }
+
+      }
+
+    }
+
+
+    window.addEventListener("scroll", reveal);
+
+    window.addEventListener("load", reveal);
+
+  </script>
 
 </body>
+
 </html>
