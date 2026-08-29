@@ -376,14 +376,10 @@
           <!-- FORMSPREE FORM -->
 
           <form
+            id="contact-form"
             class="professional-form"
             action="https://formspree.io/f/maeynwak"
             method="POST"
-          >
-          <input
-          type="hidden"
-          name="_next"
-          value="https://emmanuelkumi415-jpg.github.io/domfete_methodist_church/thank-you.html"
           >
 
 
@@ -751,6 +747,59 @@
       observer.observe(element);
 
     });
+    /* CONTACT FORM */
+
+const contactForm = document.getElementById("contact-form");
+
+if (contactForm) {
+
+  contactForm.addEventListener("submit", async function(event) {
+
+    event.preventDefault();
+
+    const submitButton =
+      contactForm.querySelector(".form-submit");
+
+    const originalText =
+      submitButton.innerHTML;
+
+    submitButton.disabled = true;
+
+    submitButton.innerHTML =
+      "Sending...";
+
+    try {
+
+      const response = await fetch(
+        contactForm.action,
+        {
+          method: "POST",
+          body: new FormData(contactForm),
+          headers: {
+            "Accept": "application/json"
+          }
+        }
+      );
+
+      if (response.ok) {
+
+        window.location.href = "thank-you.html";
+
+      } else {
+
+        throw new Error("Submission failed");
+
+      }
+
+    } catch (error) {
+      submitButton.disabled = false;
+      submitButton.innerHTML=originalText;
+      alert(
+        "Sorry your message could not sent. Please try again."
+      );
+    }
+  })
+}
 
   </script>
 
